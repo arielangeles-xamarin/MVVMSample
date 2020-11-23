@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace MVVMSample.iOS
+namespace MVVMProjectSample.iOS
 {
     public class Application
     {

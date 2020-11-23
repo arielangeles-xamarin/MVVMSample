@@ -1,8 +1,9 @@
-﻿using System;
+﻿using MVVMProjectSample.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MVVMSample
+namespace MVVMProjectSample
 {
     public partial class App : Application
     {
@@ -10,7 +11,7 @@ namespace MVVMSample
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()

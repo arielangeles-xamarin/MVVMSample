@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F89A7B08-65B9-4610-BF9D-7FBAA253CF7E}</ProjectGuid>
+    <ProjectGuid>{4561DC08-4B05-47C4-966D-F8C298F6463E}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MVVMSample.iOS</RootNamespace>
+    <RootNamespace>MVVMProjectSample.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MVVMSample.iOS</AssemblyName>
+    <AssemblyName>MVVMProjectSample.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -128,9 +128,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\MVVMSample\MVVMSample.csproj">
-      <Project>{4FC9E94C-112A-40B7-8C6A-3E0F55856E49}</Project>
-      <Name>MVVMSample</Name>
+    <ProjectReference Include="..\MVVMProjectSample\MVVMProjectSample.csproj">
+      <Project>{0ECAEF95-6027-4EF2-B679-1A8D497B8AD7}</Project>
+      <Name>MVVMProjectSample</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
