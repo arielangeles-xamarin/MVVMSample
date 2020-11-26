@@ -19,29 +19,34 @@ namespace MVVMProjectSample.ViewModels
             // Menu Options
 
             // * Bar and Hotels
-
             BarAndHotelsMenuOption.Title = "Bar and Hotels";
             BarAndHotelsMenuOption.Image = "BarAndHotelsImage";
+            BarAndHotelsMenuOption.NumberPlaces = 35;
 
             // * Fine Dining
             FineDiningMenuOption.Title = "Fine Dining";
             FineDiningMenuOption.Image = "FineDiningImage";
+            FineDiningMenuOption.NumberPlaces = 25;
 
             // * Cafes
             CafesMenuOption.Title = "Cafes";
-            CafesMenuOption.Image = "cafesImage";
+            CafesMenuOption.Image = "CafesImage";
+            CafesMenuOption.NumberPlaces = 12;
 
             // * Nearby
             NearbyMenuOption.Title = "Nearby";
             NearbyMenuOption.Image = "NearbyImage";
+            NearbyMenuOption.NumberPlaces = 45;
 
             // * Fast Foods
             FastFoodsMenuOption.Title = "Fast Foods";
             FastFoodsMenuOption.Image = "FastFoodsImage";
+            FastFoodsMenuOption.NumberPlaces = 15;
 
-            // * Bar and Hotels
+            // * Featured Foods
             FeaturedFoodsMenuOption.Title = "Featured Foods";
             FeaturedFoodsMenuOption.Image = "FeaturedFoodsImage";
+            FeaturedFoodsMenuOption.NumberPlaces = 23;
         }
     }
 }
