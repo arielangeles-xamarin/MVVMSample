@@ -52,7 +52,7 @@
 
             <Frame BorderColor="DarkRed" HasShadow="True" Margin="10" Grid.Row="0" Grid.Column="0">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding BarAndHotelsMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Image Source="{Binding BarAndHotelsMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding BarAndHotelsMenuOption.Title}" FontSize="Medium"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding BarAndHotelsMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
                 </StackLayout>
@@ -60,7 +60,7 @@
 
             <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="0" Grid.Column="1">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding FineDiningMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Image Source="{Binding FineDiningMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FineDiningMenuOption.Title}" FontSize="Medium"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FineDiningMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
                 </StackLayout>
@@ -68,7 +68,7 @@
 
             <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="1" Grid.Column="0">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding CafesMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Image Source="{Binding CafesMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding CafesMenuOption.Title}" FontSize="Medium"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding CafesMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
                 </StackLayout>
@@ -76,7 +76,7 @@
 
             <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="1" Grid.Column="1">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding NearbyMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Image Source="{Binding NearbyMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding NearbyMenuOption.Title}" FontSize="Medium"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding NearbyMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
                 </StackLayout>
@@ -84,7 +84,7 @@
 
             <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="2" Grid.Column="0">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding FastFoodsMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Image Source="{Binding FastFoodsMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FastFoodsMenuOption.Title}" FontSize="Medium"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FastFoodsMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
                 </StackLayout>
@@ -92,7 +92,7 @@
 
             <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="2" Grid.Column="1">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                    <Image Source="{Binding FeaturedFoodsMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Image Source="{Binding FeaturedFoodsMenuOption.Image}" />
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FeaturedFoodsMenuOption.Title}" FontSize="Medium"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FeaturedFoodsMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
                 </StackLayout>
