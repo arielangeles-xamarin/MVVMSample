@@ -38,7 +38,7 @@
     </ContentPage>
 
     <ContentPage BackgroundColor="White" Title="Home">
-        <Grid Padding="10" Margin="10" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+        <Grid Padding="5" Margin="10" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
             
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -50,32 +50,52 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Frame x:Name="BarAndHotelsFrame" CornerRadius="10" BorderColor="DarkRed" HasShadow="True" Margin="20" Grid.Row="0" Grid.Column="0">
-                <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding BarAndHotelsMenuOption.Title}"/>
-            </Frame>
-
-            <Frame HasShadow="True" BorderColor="DarkRed" Margin="20" Grid.Row="0" Grid.Column="1">
-                <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FineDiningMenuOption.Title}"/>
-            </Frame>
-
-            <Frame HasShadow="True" Margin="20" Grid.Row="1" Grid.Column="0">
-                
-                <StackLayout>
-                    <Image Source="{Binding CafesMenuOption.Image}" HorizontalOptions="Center"/>
-                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding CafesMenuOption.Title}"/>
+            <Frame BorderColor="DarkRed" HasShadow="True" Margin="10" Grid.Row="0" Grid.Column="0">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="{Binding BarAndHotelsMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding BarAndHotelsMenuOption.Title}" FontSize="Medium"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding BarAndHotelsMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
                 </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" Margin="20" Grid.Row="1" Grid.Column="1">
-                <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding NearbyMenuOption.Title}"/>
+            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="0" Grid.Column="1">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="{Binding FineDiningMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FineDiningMenuOption.Title}" FontSize="Medium"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FineDiningMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
+                </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" Margin="20" Grid.Row="2" Grid.Column="0">
-                <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FastFoodsMenuOption.Title}"/>
+            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="1" Grid.Column="0">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="{Binding CafesMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding CafesMenuOption.Title}" FontSize="Medium"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding CafesMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
+                </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" Margin="20" Grid.Row="2" Grid.Column="1">
-                <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FeaturedFoodsMenuOption.Title}"/>
+            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="1" Grid.Column="1">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="{Binding NearbyMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding NearbyMenuOption.Title}" FontSize="Medium"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding NearbyMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="2" Grid.Column="0">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="{Binding FastFoodsMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FastFoodsMenuOption.Title}" FontSize="Medium"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FastFoodsMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="2" Grid.Column="1">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="{Binding FeaturedFoodsMenuOption.Image}" HorizontalOptions="Center" Aspect="AspectFit"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FeaturedFoodsMenuOption.Title}" FontSize="Medium"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FeaturedFoodsMenuOption.NumberPlaces, StringFormat='{0} Places'}" FontSize="Small"/>
+                </StackLayout>
             </Frame>
 
         </Grid>
