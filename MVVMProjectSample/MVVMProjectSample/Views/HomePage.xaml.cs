@@ -30,7 +30,7 @@ namespace MVVMProjectSample.Views
             {
                 if (tapCount % 2 == 0)
                 {
-                    frame.BackgroundColor = Color.DarkRed;
+                    frame.BorderColor = Color.DarkRed;
                 }
                 else
                 {

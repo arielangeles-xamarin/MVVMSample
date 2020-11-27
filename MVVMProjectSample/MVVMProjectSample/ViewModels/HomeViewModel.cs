@@ -20,7 +20,7 @@ namespace MVVMProjectSample.ViewModels
 
             // * Bar and Hotels
             BarAndHotelsMenuOption.Title = "Bar and Hotels";
-            BarAndHotelsMenuOption.Image = "BarAndHotelsImage";
+            BarAndHotelsMenuOption.Image = "BarAndHotelsImg.jpg";
             BarAndHotelsMenuOption.NumberPlaces = 35;
 
             // * Fine Dining
