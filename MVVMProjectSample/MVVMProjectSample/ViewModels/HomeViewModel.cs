@@ -35,18 +35,19 @@ namespace MVVMProjectSample.ViewModels
 
             // * Nearby
             NearbyMenuOption.Title = "Nearby";
-            NearbyMenuOption.Image = "NearbyImage";
+            NearbyMenuOption.Image = "NearbyImg";
             NearbyMenuOption.NumberPlaces = 45;
 
             // * Fast Foods
             FastFoodsMenuOption.Title = "Fast Foods";
-            FastFoodsMenuOption.Image = "FastFoodsImage";
+            FastFoodsMenuOption.Image = "FastFoodsImg";
             FastFoodsMenuOption.NumberPlaces = 15;
 
             // * Featured Foods
             FeaturedFoodsMenuOption.Title = "Featured Foods";
-            FeaturedFoodsMenuOption.Image = "FeaturedFoodsImage";
+            FeaturedFoodsMenuOption.Image = "FeaturedFoodsImg";
             FeaturedFoodsMenuOption.NumberPlaces = 23;
+
         }
     }
 }
