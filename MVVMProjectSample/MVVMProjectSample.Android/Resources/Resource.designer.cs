@@ -8283,7 +8283,7 @@ namespace MVVMProjectSample.Droid
 			public const int avd_show_password = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
-			public const int BarAndHotelsImage = 2131165276;
+			public const int BarAndHotelsImg = 2131165276;
 			
 			// aapt resource value: 0x7F07005D
 			public const int CafesImage = 2131165277;

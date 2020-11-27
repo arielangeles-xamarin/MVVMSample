@@ -99,19 +99,10 @@
     <AndroidResource Include="Resources\drawable\CafesImage" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\BarAndHotelsImage" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\FastFoodsImg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\FeaturedFoodsImg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\HomeIcon" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\RegisterIcon" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\LoginIcon.png" />
@@ -124,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\NearbyImg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\FastFoodsImg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BarAndHotelsImg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
