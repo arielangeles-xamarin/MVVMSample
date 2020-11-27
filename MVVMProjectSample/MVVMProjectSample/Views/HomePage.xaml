@@ -4,40 +4,9 @@
              xmlns:pages="clr-namespace:MVVMProjectSample.Views"
              x:Class="MVVMProjectSample.Views.HomePage" Title="Home" BarBackgroundColor="DarkRed">
   <!--Pages can be added as references or inline-->
-    <ContentPage BackgroundColor="White" Title="Login">
 
-        <Grid  Padding="10" Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center" >
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Image Source="logoIntec"
-                   HorizontalOptions="Center" Aspect="AspectFit"
-                   Grid.Row="0" Grid.Column="0"
-                   WidthRequest="200" HeightRequest="200"/>
-
-            <Entry x:Name="username" TextColor="Black" Placeholder="Username" PlaceholderColor="DarkGray" Grid.Row="1" Grid.Column="0" />
-            <Entry x:Name="password" TextColor="Black" Placeholder="Password" PlaceholderColor="DarkGray" IsPassword="True" Grid.Row="2" Grid.Column="0" />
-            <Entry x:Name="confirmPassword" TextColor="Black" Placeholder="Confirm Password" PlaceholderColor="DarkGray" IsPassword="True" Grid.Row="3" Grid.Column="0" />
-            <Button BackgroundColor="DarkRed" Text="Sign in" Grid.Row="4" Grid.Column="0" Clicked="SignInUpButtonClicked"/>
-            <Label TextColor="DarkRed" Text="Haven't registered yet?" HorizontalOptions="Center"
-                   Grid.Row="5" Grid.Column="0">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnRegisterLabelTapped" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
-        </Grid>
-    </ContentPage>
-
-    <ContentPage BackgroundColor="White" Title="Home">
+    <ContentPage BackgroundColor="White" Title="Home" IconImageSource="HomeIcon.png">
+        
         <Grid Padding="5" Margin="10" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
             
             <Grid.RowDefinitions>
@@ -50,7 +19,10 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Frame BorderColor="DarkRed" HasShadow="True" Margin="10" Grid.Row="0" Grid.Column="0">
+            <Frame BorderColor="Black" HasShadow="True" Margin="10" Grid.Row="0" Grid.Column="0">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameTapped" NumberOfTapsRequired="2"/>
+                </Frame.GestureRecognizers>
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Image Source="{Binding BarAndHotelsMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding BarAndHotelsMenuOption.Title}" FontSize="Medium"/>
@@ -58,7 +30,7 @@
                 </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="0" Grid.Column="1">
+            <Frame HasShadow="True" BorderColor="Black" Margin="10" Grid.Row="0" Grid.Column="1">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Image Source="{Binding FineDiningMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FineDiningMenuOption.Title}" FontSize="Medium"/>
@@ -66,7 +38,7 @@
                 </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="1" Grid.Column="0">
+            <Frame HasShadow="True" BorderColor="Black" Margin="10" Grid.Row="1" Grid.Column="0">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Image Source="{Binding CafesMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding CafesMenuOption.Title}" FontSize="Medium"/>
@@ -74,7 +46,7 @@
                 </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="1" Grid.Column="1">
+            <Frame HasShadow="True" BorderColor="Black" Margin="10" Grid.Row="1" Grid.Column="1">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Image Source="{Binding NearbyMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding NearbyMenuOption.Title}" FontSize="Medium"/>
@@ -82,7 +54,7 @@
                 </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="2" Grid.Column="0">
+            <Frame HasShadow="True" BorderColor="Black" Margin="10" Grid.Row="2" Grid.Column="0">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Image Source="{Binding FastFoodsMenuOption.Image}"/>
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FastFoodsMenuOption.Title}" FontSize="Medium"/>
@@ -90,7 +62,7 @@
                 </StackLayout>
             </Frame>
 
-            <Frame HasShadow="True" BorderColor="DarkRed" Margin="10" Grid.Row="2" Grid.Column="1">
+            <Frame HasShadow="True" BorderColor="Black" Margin="10" Grid.Row="2" Grid.Column="1">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Image Source="{Binding FeaturedFoodsMenuOption.Image}" />
                     <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding FeaturedFoodsMenuOption.Title}" FontSize="Medium"/>

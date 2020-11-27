@@ -47,6 +47,7 @@ namespace MVVMProjectSample.ViewModels
             FeaturedFoodsMenuOption.Title = "Featured Foods";
             FeaturedFoodsMenuOption.Image = "FeaturedFoodsImg";
             FeaturedFoodsMenuOption.NumberPlaces = 23;
+
         }
     }
 }

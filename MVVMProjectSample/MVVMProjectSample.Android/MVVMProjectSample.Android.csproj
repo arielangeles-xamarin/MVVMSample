@@ -102,13 +102,25 @@
     <AndroidResource Include="Resources\drawable\BarAndHotelsImage" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\FastFoodsImage" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\FastFoodsImg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\FeaturedFoodsImg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\HomeIcon" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\RegisterIcon" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LoginIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\RegisterIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\NearbyImg" />
